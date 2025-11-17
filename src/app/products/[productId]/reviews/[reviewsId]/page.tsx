@@ -8,7 +8,7 @@ export default async function ProdectReview({
     const {productId , reviewsId} = await params;
     if(parseInt(reviewsId) > 100){
         // notFound();
-        redirect("/")
+        redirect("/products")
     }
     return <h1> Review {reviewsId} for Products {productId} is here.</h1>
 }
